@@ -23,7 +23,9 @@ This tutorial walks you through setting up Kubernetes the hard way. This guide i
 
 ### DHCPを使わずにIPアドレスを固定する
 
-① それぞれのサーバーの/etc/dhcpcd.confに以下を書き加える
+① 各サーバーで `ip addr` を実行し、ネットワークインターフェース名（例: `enp0s3`）を確認する
+
+② それぞれのサーバーの/etc/dhcpcd.confに以下を書き加える
 
 ```
 interface ****
