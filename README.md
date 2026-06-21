@@ -11,12 +11,12 @@ This tutorial walks you through setting up Kubernetes the hard way. This guide i
 ### node 0
 ### node 1
 
-| 種類 | メモリ | ホストOS |
-| --- | --- | --- |
-| jumpbox | 8GB | Windows |
-| server | 16GB | Windows |
-| node 0 | 16GB | Windows |
-| node 1 | 15GB | MacBookAir |
+| 種類 | メモリ | ストレージ | HostOS | 仮想OS |
+| --- | --- | --- | --- | --- |
+| jumpbox | 512MB | 10GB | Windows | Debian |
+| server | 2GB | 20GB | Windows | Debian |
+| node 0 | 2GB | 20GB | Windows | Debian |
+| node 1 | 2GB | 20GB | MacBookAir | Debian |
 
 ## Copyright
 
