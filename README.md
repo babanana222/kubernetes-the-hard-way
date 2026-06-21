@@ -25,12 +25,12 @@ This tutorial walks you through setting up Kubernetes the hard way. This guide i
 
 ① それぞれのサーバーの/etc/dhcpcd.confに以下を書き加える
 
-"""
+```ini
 interface ****
 static ip_address=【任意のIPアドレス】/24
 static routers=【自宅のルーターのIPアドレス】
 static domain_name_servers=8.8.8.8 1.1.1.1
-"""
+
 ## Copyright
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
