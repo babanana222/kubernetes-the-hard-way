@@ -15,9 +15,20 @@ This tutorial walks you through setting up Kubernetes the hard way. This guide i
 | node 1 | 2GB | 20GB | MacBookAir | Debian |
 
 ## 特徴
-ブリッジネットワークを使って、Windows上の仮想マシンと、Mac上の仮想マシンを同じネットワークで通信させてクラスター化を達成した
+・ブリッジネットワークを使って、Windows上の仮想マシンと、Mac上の仮想マシンを同じネットワークで通信させてクラスター化を達成した
+
 ① VirtualBox > 設定 > ネットワーク > ブリッジアダプター を選択する
+
 ② /etc/ssh/sshd_config.d/permit-root.confにて、PermitRootLogin yesを追記する 
+
+・DHCPを使わずにIPアドレスを固定する
+
+① それぞれのサーバーの/etc/dhcpcd.confに以下を書き加える
+
+interface ****
+static ip_address=【任意のIPアドレス】/24
+static routers=【自宅のルーターのIPアドレス】
+static domain_name_servers=8.8.8.8 1.1.1.1
 
 ## Copyright
 
