@@ -6,10 +6,6 @@ This tutorial walks you through setting up Kubernetes the hard way. This guide i
 
 
 ## システム構成
-### jumpbox
-### server
-### node 0
-### node 1
 
 | 種類 | メモリ | ストレージ | HostOS | 仮想OS |
 | --- | --- | --- | --- | --- |
@@ -17,6 +13,11 @@ This tutorial walks you through setting up Kubernetes the hard way. This guide i
 | server | 2GB | 20GB | Windows | Debian |
 | node 0 | 2GB | 20GB | Windows | Debian |
 | node 1 | 2GB | 20GB | MacBookAir | Debian |
+
+## 特徴
+ブリッジネットワークを使って、Windows上の仮想マシンと、Mac上の仮想マシンを同じネットワークで通信させてクラスター化を達成した
+① VirtualBox > 設定 > ネットワーク > ブリッジアダプター を選択する
+② /etc/ssh/sshd_config.d/permit-root.confにて、PermitRootLogin yesを追記する 
 
 ## Copyright
 
